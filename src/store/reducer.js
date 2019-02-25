@@ -14,13 +14,6 @@ const reducer = (state = initialState, action) => {
       expression: ''
     }
   }
-  if (action.type === 'UPDATE_EXPRESSION_FROM_INPUT') {
-    return {
-      ...state,
-      result: null,
-      expression: action.value
-    }
-  }
   if (action.type === 'UPDATE_EXPRESSION') {
     if (action.value === 'c') {
       if (state.result) {
